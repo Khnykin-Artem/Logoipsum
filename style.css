@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1111px;
+  margin: 0 auto;
+}
+
+.header {
+  font-family: "DM Sans";
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__nav-menu {
+  display: flex;
+  column-gap: 50px;
+}
+
+.header__nav-menu-item {
+  color: #19191B;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: -0.469px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.header__nav-menu-item_active::after {
+  content: "";
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #5454D4;
+}
+
+.header__button {
+  background: #FF7143;
+}
+
+.start-button {
+  padding: 20px 60px;
+  border-radius: 10px;
+  color: #FFF;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: -0.531px;
+  border-color: #FF7143;
+  transition: all .3s;
+}
+
+.start-button_active {
+  transform: scale(1.1);
+}
